@@ -5,8 +5,8 @@
             prohibited this song from being saved:
         </h3>
         <ul>
-            <% @song.errors.full_messages.each do |m| %>
-                <li><%= m %></li>
+            <% @song.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
             <% end %>
         </ul> 
     </div>
